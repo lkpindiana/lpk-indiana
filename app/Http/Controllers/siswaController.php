@@ -159,10 +159,10 @@ class siswaController extends Controller
     public function export()
     {
         $data = [
-            'text' => "contoh hasil"
+            'siswa' => siswaModel::all()
         ];
 
         $pdf = Pdf::loadView('siswa.export', $data);
-        return $pdf->stream('invoice.pdf');
+        return $pdf->stream('daftar-siswa.pdf');
     }
 }

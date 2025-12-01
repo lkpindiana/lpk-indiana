@@ -11,7 +11,8 @@
                         <div class="row justify-content-between">
                             <div class="col-md-6">
                                 <a href="{{ route('siswa.create') }}" class="btn btn-success w-25">Tambah</a>
-                                <a href="{{ route('siswa.export') }}" class="btn btn-danger w-25">Export PDF</a>
+                                <a href="{{ route('siswa.export') }}" class="btn btn-danger w-25" target="_blank">Export
+                                    PDF</a>
                             </div>
                             <div class="col-md-6">
                                 <form action="{{ route('siswa.index') }}" method="get">
